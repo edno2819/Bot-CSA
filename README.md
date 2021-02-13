@@ -1,6 +1,6 @@
 # Bot-CSA
 ## Bot teste para vaga de Dev
-<img src="https://raw.githubusercontent.com/edno2819/Bot-CSA/main/img_readme.png" height="80" width="200"/>
+<img src="https://raw.githubusercontent.com/edno2819/Bot-CSA/main/img_readme.png" height="120" width="250"/>
 
 > Status do Teste: Concluido :heavy_check_mark:
 
