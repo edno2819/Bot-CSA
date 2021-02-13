@@ -2,9 +2,7 @@ from classes import Site_csa
 import csv
 
 
-menssagem_para_formulario="""Gostaria de fazer parte do grupo CSA por enxergar uma oportunidade 
-                             evoluir como profissional à medida que contribuo nas atividades e no
-                             desenvolvimento da empresa."""
+menssagem_para_formulario="""Gostaria de fazer parte do grupo CSA por enxergar uma oportunidade evoluir como profissional à medida que contribuo nas atividades e no desenvolvimento da empresa."""
 
 bot=Site_csa()
 bot.iniciar_navegador()
@@ -23,11 +21,12 @@ with open('infor.csv', mode='w', newline='') as csv_file:
 
     print("Informações salvas!")
 
-enviar_formulario=bot.formulario("Edno","9899054639","CSA","hotmail.com",menssagem_para_formulario,"Vaga para Dev","http://www.csa-ma.com.br/")
+enviar_formulario=bot.formulario("Edno","9899054639","CSA","edno2819@hotmail.com",menssagem_para_formulario,"Vaga para Dev","http://www.csa-ma.com.br/")
 if enviar_formulario!=True:
     print("Erro de validacao dos dados!")
 else:
     print("Formulario enviado!")
 
+input()
 bot.close_driver()
 
