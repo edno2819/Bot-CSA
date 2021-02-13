@@ -6,12 +6,12 @@ menssagem_para_formulario="""Gostaria de fazer parte do grupo CSA por enxergar u
                              evoluir como profissional à medida que contribuo nas atividades e no
                              desenvolvimento da empresa."""
 
-a=Site_csa()
-a.iniciar_navegador()
-a.acessar_seguimentos("blog")
-a.carregar_all_news()
+bot=Site_csa()
+bot.iniciar_navegador()
+bot.acessar_seguimentos("blog")
+bot.carregar_all_news()
 
-informacoes_noticias=a.get_informacoes()
+informacoes_noticias=bot.get_informacoes()
 with open('infor.csv', mode='w', newline='') as csv_file:
     
     fieldnames = ["titulo","data","resumo","url"]
@@ -23,11 +23,11 @@ with open('infor.csv', mode='w', newline='') as csv_file:
 
     print("Informações salvas!")
 
-enviar_formulario=a.formulario("Edno","9899054639","CSA","hotmail.com",menssagem_para_formulario,"Vaga para Dev","http://www.csa-ma.com.br/")
+enviar_formulario=bot.formulario("Edno","9899054639","CSA","hotmail.com",menssagem_para_formulario,"Vaga para Dev","http://www.csa-ma.com.br/")
 if enviar_formulario!=True:
     print("Erro de validacao dos dados!")
 else:
     print("Formulario enviado!")
 
-a.close_driver()
+bot.close_driver()
 
