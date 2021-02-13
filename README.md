@@ -7,7 +7,7 @@
 ## Linguagens e libs utilizadas :books:
 
 - Python: versão 3.7
-- Selenium: versão 
+- Selenium: versão 3.141.0
 - Beautifulsoup: versão 4.9
 - re
 - unicodedata
